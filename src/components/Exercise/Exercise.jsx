@@ -17,7 +17,7 @@ export const Exercise = ({ exercise, deleteExercise }) => {
         <td>{exercise.duration}</td>
         <td>{exercise.date.substring(0, 10)}</td>
         <td>
-          <Link to={`/edit/${exercise._id}`}>edit</Link> |{' '}
+          <Link to={`/mern-client/edit/${exercise._id}`}>edit</Link> |{' '}
           <button
             className={style.btn}
             onClick={() => deleteExercise(exercise._id)}>

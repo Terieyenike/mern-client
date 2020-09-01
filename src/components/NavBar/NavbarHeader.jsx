@@ -8,7 +8,7 @@ export const NavbarHeader = ({ handleNavbar }) => {
     <>
       <header>
         <div className={style.logo}>
-          <Link to='/'>ExcerTracker</Link>
+          <Link to='/mern-client'>ExcerTracker</Link>
           <FaAlignRight onClick={handleNavbar} className={style.toggle__icon} />
         </div>
       </header>

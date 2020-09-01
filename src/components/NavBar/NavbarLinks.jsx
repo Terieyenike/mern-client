@@ -7,17 +7,17 @@ const links = [
   {
     id: 0,
     name: 'Exercises',
-    path: '/',
+    path: '/mern-client/',
   },
   {
     id: 1,
     name: 'Create Exercise',
-    path: '/create',
+    path: '/mern-client/create',
   },
   {
     id: 2,
     name: 'Create User',
-    path: '/user',
+    path: '/mern-client/user',
   },
 ];
 

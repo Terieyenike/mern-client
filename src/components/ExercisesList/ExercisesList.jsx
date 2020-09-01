@@ -13,12 +13,12 @@ const Exercise = (props) => (
     <td>{props.exercise.duration}</td>
     <td>{props.exercise.date.substring(0, 10)}</td>
     <td>
-      <Link to={'/edit/' + props.exercise._id} className={style.tdlink}>
+      <Link to={'/mern-client/edit/' + props.exercise._id} className={style.tdlink}>
         edit
       </Link>{' '}
       |{' '}
       <a
-        href='#'
+        // href='#'
         onClick={() => {
           props.deleteExercise(props.exercise._id);
         }}

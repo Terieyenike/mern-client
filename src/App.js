@@ -12,10 +12,10 @@ function App() {
     <div>
       <NavBar />
       <Switch>
-        <Route path='/' exact component={ExercisesList} />
-        <Route path='/create' component={CreateExercise} />
-        <Route path='/user' component={CreateUser} />
-        <Route path='/edit/:id' component={EditExercise} />
+        <Route path='/mern-client' exact component={ExercisesList} />
+        <Route path='/mern-client/create' component={CreateExercise} />
+        <Route path='/mern-client/user' component={CreateUser} />
+        <Route path='/mern-clent/edit/:id' component={EditExercise} />
       </Switch>
     </div>
   );
