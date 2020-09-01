@@ -17,7 +17,9 @@ export const CreateExercise = () => {
 
   const fetchusers = async () => {
     try {
-      const response = await fetch('http://localhost:8001/users/');
+      const response = await fetch(
+        'https://lit-escarpment-62322.herokuapp.com/users/'
+      );
       const data = await response.json();
       if (data.length > 0) {
         setUsers(data);
@@ -54,7 +56,10 @@ export const CreateExercise = () => {
     };
 
     axios
-      .post('http://localhost:8001/exercises/add', exercise)
+      .post(
+        'https://lit-escarpment-62322.herokuapp.com/exercises/add',
+        exercise
+      )
       .then((res) => console.log(res.data));
     window.location = '/';
     setDescription('');

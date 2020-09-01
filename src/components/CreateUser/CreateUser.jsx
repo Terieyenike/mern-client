@@ -19,7 +19,7 @@ export const CreateUser = () => {
       username,
     };
     axios
-      .post('http://localhost:8001/users/add', user)
+      .post('https://lit-escarpment-62322.herokuapp.com/users/add', user)
       .then((res) => console.log(res.data));
     console.log(user);
     setUsername('');

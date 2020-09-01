@@ -40,7 +40,7 @@ export default class ExercisesList extends React.Component {
 
   componentDidMount() {
     axios
-      .get('http://localhost:8001/exercises/')
+      .get('https://lit-escarpment-62322.herokuapp.com/exercises/')
       .then((response) => {
         this.setState({ exercises: response.data });
       })
@@ -50,9 +50,11 @@ export default class ExercisesList extends React.Component {
   }
 
   deleteExercise(id) {
-    axios.delete('http://localhost:8001/exercises/' + id).then((response) => {
-      console.log(response.data);
-    });
+    axios
+      .delete('https://lit-escarpment-62322.herokuapp.com/exercises/' + id)
+      .then((response) => {
+        console.log(response.data);
+      });
 
     this.setState({
       exercises: this.state.exercises.filter((el) => el._id !== id),
