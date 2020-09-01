@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+:root {
+  --background: #161616;
+  --white: #ffffff;
+  --toggle: rgb(61, 61, 60);
+}
+
+body {
+  font-size: 1.3rem;
+  font-family: Montserrat;
+}
+
+header {
+  padding: 0.65em 0;
+}
+
+a {
+  text-decoration: none;
+  /* color: var(--white); */
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75rem;
+  width: 90%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo a {
+  font-size: 2rem;
+  color: var(--white);
+  font-weight: 700;
+}
+
+.toggle__icon {
+  font-size: 1.75rem;
+  cursor: pointer;
+  color: var(--white);
+}
+
+.navContainer {
+  background: black;
+  padding: 0.85em 0;
+}
+
+.nav__link {
+  color: var(--white);
+}
+
+.nav__item + .nav__item {
+  margin-top: 1.2em;
+}
+
+.btn {
+  background: none;
+  border: 0;
+  outline: 0;
+}
+
+.tdlink {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .toggle__icon {
+    display: none;
+  }
+
+  .navWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .nav__list {
+    display: flex;
+    width: 100%;
+  }
+
+  .nav__item + .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+}
